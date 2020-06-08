@@ -32,17 +32,15 @@ header {
 }
 
 .content {
+	height: 50vh;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
 }
 
 section {
-	display: flex;
-	justify-content: center;
+	text-align: center;
 	background-color: #a4dbab;
 	font-size: 2rem;
 	margin: 1rem 1rem;
-	padding: 1rem 0;
-	height: 100%;
 }
