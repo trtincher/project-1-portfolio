@@ -1,5 +1,5 @@
 # Project Overview
-
+https://git.generalassemb.ly/trtincher/project-1-portfolio.git
 ## Project Schedule
 
 This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
@@ -18,7 +18,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+https://brittanychiang.com/#about I like this simple clean design with small color pallet using one color for highlights and the rest is in black and grey.
 
 ## Google Sheet
 
@@ -28,19 +28,13 @@ Include link to your google sheet here.  Here is the sample [Joe had used in cla
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
-- [Mobile]()
-- [Tablet](https://mockflow.com/app/#Wireframe)
-- [Desktop](https://www.figma.com/)
-
-Wireframing Resources:
-
-- [Mockflow](https://mockflow.com/app/#Wireframe)
-- [Figma](https://www.figma.com/)
-
+- [Mobile](https://i.imgur.com/34kk8zV.png)
+- [Tablet](https://i.imgur.com/LElsAOX.png)
+- [Desktop](https://i.imgur.com/LElsAOX.png)
 
 ## Time/Priority Matrix 
 
-[Link]()
+[Link](https://i.imgur.com/8ZI42Ik.png)
 
 Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
 
@@ -54,16 +48,22 @@ Once complete tally up the time and determine how long the project will take to 
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-#### MVP (examples)
+#### MVP 
 
-- Pull data using google json api
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+- HTML Formating Mobile
+- HTML Formating Tablet
+- HTML Formating Desktop
+- Css Styling Mobile
+- Css Styling Tablet
+- Css Styling Desktop
+- Json Api Pull
+- Render Elements with Json Mobile
+- Render Json Tablet
+- Render Json Desktop
 
 #### PostMVP 
 
-- Anything else that is not MVP
+- Animations/Transitions
 
 ## Functional Components
 
@@ -96,7 +96,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Total | H | 20hrs| -hrs | -hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+ - Bootstrap
+ - JQuery
 
 ## Code Snippet
 
