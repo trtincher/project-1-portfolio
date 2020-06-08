@@ -5,12 +5,37 @@ html {
 .wrapper {
 	text-align: center;
 	margin: .5rem;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
 }
 
 header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
 	background-color: #a4dbab;
 	font-size: 2rem;
+}
+
+nav {
+	display: flex;
+	font-size: 1rem;
+	justify-content: flex-between;
+}
+
+button {
+	background-color: white;
+	border: none;
+	font-size: .5rem;
+	margin: 1rem 0;
+	visibility: hidden;
+}
+
+#hamburger i {
+	font-size: 2rem;
+	margin-left: 15rem;
+	margin-top: 1rem;
 }
 
 .name {
@@ -25,22 +50,89 @@ header {
 }
 
 .headshot {
-	width: 100px;
+	width: 15rem;
 	border-radius: 10px;
 	border: 2px solid white;
 	margin: 2rem 0;
 }
 
 .content {
-	height: 50vh;
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
 }
 
 section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 	background-color: #a4dbab;
 	font-size: 2rem;
-	margin: 1rem 1rem;
+	margin: 1rem auto;
+	height: 12rem;
+	width: 12rem;
+}
+
+@media only screen and (min-width: 768px) {
+	header {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		align-items: center;
+	}
+
+	.headshot {
+		margin: 5rem 5rem;
+		width: 30rem;
+	}
+
+	nav {
+		grid-column: 1/ 3;
+		justify-content: space-around;
+	}
+
+	#hamburger {
+		display: none;
+	}
+
+	button {
+		visibility: visible;
+		font-size: 2rem;
+		margin: 1rem 2rem;
+	}
+
+	.content {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	section {
+		height: 15rem;
+		width: 15rem;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	html {
+		font-size: 12px;
+	}
+
+	section {
+		height: 17rem;
+		width: 17rem;
+	}
+
+	#experience {
+		grid-column-start: 2;
+		grid-row-start: 2;
+	}
+
+	#portfolio {
+		grid-column: 3;
+		grid-row: 1;
+	}
+
+	#contact {
+		grid-column: 4;
+		grid-row: 2;
+	}
 }
