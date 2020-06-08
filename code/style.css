@@ -1,0 +1,47 @@
+html {
+	font-size: 10px;
+}
+
+.wrapper {
+	text-align: center;
+	margin: .5rem;
+}
+
+header {
+	text-align: center;
+	background-color: #a4dbab;
+	font-size: 2rem;
+}
+
+.name {
+	font-size: 3rem;
+	margin: 1rem 0;
+}
+
+.jobTitle {
+	padding: 1rem 0;
+	background-color: #a4dbab;
+	margin: 1rem 0;
+}
+
+.headshot {
+	width: 100px;
+	border-radius: 10px;
+	border: 2px solid white;
+	margin: 2rem 0;
+}
+
+.content {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	background-color: #a4dbab;
+	font-size: 2rem;
+	margin: 1rem 1rem;
+	padding: 1rem 0;
+}
