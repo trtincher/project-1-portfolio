@@ -2,6 +2,14 @@ html {
 	font-size: 10px;
 }
 
+.red {
+	background-color: red;
+}
+
+.backgroundColor {
+	background-color: #a4dbab;
+}
+
 .wrapper {
 	text-align: center;
 	margin: .5rem;
@@ -57,9 +65,8 @@ button {
 }
 
 .content {
-	display: grid;
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 section {
@@ -69,9 +76,14 @@ section {
 	text-align: center;
 	background-color: #a4dbab;
 	font-size: 2rem;
+	width: 40%;
+	height: 20%;
 	margin: 1rem auto;
-	height: 12rem;
-	width: 12rem;
+}
+
+.infoFormat {
+	display: flex;
+	flex-direction: column;
 }
 
 @media only screen and (min-width: 768px) {
