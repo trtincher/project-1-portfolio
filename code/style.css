@@ -1,3 +1,9 @@
 body {
 	padding-top: 3rem;
+	background-image: url();
+}
+
+#headsh #headshot {
+	width: 30vw;
+	background-color: aquamarine;
 }
