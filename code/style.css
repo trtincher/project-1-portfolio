@@ -1,16 +1,19 @@
 body {
 	padding-top: 3rem;
-	background-color: #aff4cd;
+	/* background-color: #aff4cd; */
+	background: url('https://i.imgur.com/LGeyMzP.jpg');
+	background-size: auto;
+	background-attachment: fixed;
 	color: #58bda6;
 }
 
 nav {
 	/* background-color: #b2d885; */
-	/* color: #41accc; */
+	color: #41accc;
 }
 
 a {
-	/* color: #41accc; */
+	color: #41accc;
 }
 
 nav span {
@@ -28,7 +31,7 @@ nav span {
 }
 
 #introHeader {
-	font-size: ;
+	color: whitesmoke;
 }
 
 .card {
