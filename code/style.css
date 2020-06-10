@@ -1,9 +1,55 @@
 body {
 	padding-top: 3rem;
-	background-image: url();
+	background-color: #aff4cd;
+	color: #58bda6;
 }
 
-#headsh #headshot {
-	width: 30vw;
-	background-color: aquamarine;
+nav {
+	/* background-color: #b2d885; */
+	/* color: #41accc; */
+}
+
+a {
+	/* color: #41accc; */
+}
+
+nav span {
+	/* color: #41accc; */
+}
+
+#headshotDiv {
+	text-align: center;
+}
+
+#headshot {
+	width: 60vw;
+	background-color: #58bda6;
+	border: 7px solid white;
+}
+
+#introHeader {
+	font-size: ;
+}
+
+.card {
+	background-color: #b2d885;
+}
+
+.card-title {
+	background-color: #41accc;
+	color: whitesmoke;
+}
+
+.card-body {
+	background-color: #58bda6;
+	color: whitesmoke;
+}
+
+@media only screen and (min-width: 768px) {
+	#headshot {
+		width: 30vw;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
 }
