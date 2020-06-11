@@ -20,8 +20,7 @@
             <button class="close">
                 X
             </button>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#top">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#portfolioContainer">Portfolio</a></li>
@@ -31,10 +30,11 @@
         <h1>"Any sufficiently advanced technology is indistinguishable from magic"</h1>
         <h3>-Arthur C. Clarke</h3>
     </div>
-    <div id="headshotBackground">
-        <img id="headshot" src="https://i.imgur.com/Lb31Ln9.png" alt="headshot">
-    </div>
+
     <header>
+        <div id="headshotBackground">
+            <img id="headshot" src="https://i.imgur.com/Lb31Ln9.png" alt="headshot">
+        </div>
         <h1>Hi I'm Travis Tincher</h1>
         <h2>I'm Software Engineer and Developer </h2>
     </header>
@@ -89,16 +89,29 @@
         <div id="portfolioContent"></div>
     </div>
     <footer>
-        <ul>
+        <ul id="footerLinks">
             <li><a href="#"><i class="fab fa-github"></i></a></li>
             <li><a href="#"><i class="fab fa-codepen"></i></a></li>
             <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="#">Contact</a></li>
+            <li class ="slideButton">Contact</li>
         </ul>
-        <div class="contactForm right">
+
+        <div class="contactForm footerLeft">
+            <button class=" slideButton footerClose">
+                X
+            </button>
+            <h1>Contact Me</h1>
             <form action="">
-                
+                <input type="text" placeholder="First and Last Name">
+                <input type="email" name="email" id="contactEmail" placeholder="youremail@gmail.com">
+                <textarea name="message" id="formMessage" placeholder="your message here..."></textarea>
             </form>
+            <div id="formLinks">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-codepen"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            
         </div>
     </footer>
 

@@ -62,4 +62,8 @@ $(() => {
 			$('nav').removeClass('open');
 		}
 	});
+
+	$('.slideButton').on('click', () => {
+		$('footer').toggleClass('footerOpen');
+	});
 });
