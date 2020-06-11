@@ -10,9 +10,9 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |---|---| ---|
 |Day 1| Project Description | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline | Complete
-|Day 2| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 3| MVP & Bug Fixes | Incomplete
-|Day 4| Final Touches | Incomplete
+|Day 2| Core Application Structure (HTML, CSS, etc.) | Complete
+|Day 3| MVP & Bug Fixes | Complete
+|Day 4| Final Touches | Complete
 |Day 5| Present | Incomplete
 
 
@@ -22,7 +22,7 @@ https://brittanychiang.com/#about I like this simple clean design with small col
 
 ## Google Sheet
 
-Include link to your google sheet here.  Here is the sample [Joe had used in class](https://docs.google.com/spreadsheets/d/15PmioBi2dQEkewpqI7MDkDpvcVF0Trw8vmarAQbwoHk/edit#gid=0) 
+[My Google Prject Sheet](https://docs.google.com/spreadsheets/d/1FlYxWf-DCBFPt55fm0Hyu5pLr2dgCr2RqA1LKfahF-A/edit?usp=sharing) 
 
 ## Wireframes
 
@@ -34,7 +34,7 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 ## Time/Priority Matrix 
 
-[Link](https://i.imgur.com/8ZI42Ik.png)
+[Travis Tincher Project 1 Time/Priority Matrix](https://i.imgur.com/8ZI42Ik.png)
 
 Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
 
@@ -60,6 +60,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Render Elements with Json Mobile
 - Render Json Tablet
 - Render Json Desktop
+- Working Links in NavBar and Footer
 
 #### PostMVP 
 
@@ -74,49 +75,81 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| HTML Mobile | H |  1hr | 1hr | :---: |
-| HTML Tablet | H |  .2hr | .2hr | :---: |
-| HTML Desktop | H |  .2hr | .2hr | :---: |
-| Css Mobile | H |  1hr | 1hr | :---: |
-| Css Tablet | H |  1hr | .5hr | :---: |
-| Css Desktop | H |  1hr | .5hr | :---: |
-| Responsive | H | 2hr | 1hr | -hr|
-| Hamburger | H | 1hr | 1.5hr | -hr|
-| Regular Nav | H | H | .5hr | -hr|
-| Import JSON API | H | 3hrs| 2hr | -hr |
-| JSON Render Mobile | H | 2hrs| -hr | -hr |
-| JSON Render Mobile | H | 1hrs| -hr | -hr |
-| JSON Render Mobile | H | 1hrs| -hr | -hr |
-| Social Media Icons | L | 1hr | -hr | -hr|
-| Total | H | 14.7hrs| 3hrs | -hrs |
+| HTML Mobile | H |  1hr | :---: | 1hr|
+| HTML Tablet | H |  .2hr | :---: | .2hr |
+| HTML Desktop | H |  .2hr | :---: | .2hr |
+| Css Mobile | H |  3hr | :---:| 4hr|
+| Css Tablet | H |  1hr | :---: | 1.5hr |
+| Css Desktop | H |  1hr | :---: | 1.5hr |
+| Responsive | H | 2hr | :---: | 5hr|
+| Hamburger | H | 1hr | :---: | 1.5hr|
+| Sliding Nav | H | 1H | :---: | 1.5hr|
+| Sliding Contacts | H | 2H | :---: | 2hr|
+| Import JSON/Render API | H | 3hrs| :---: | 2hr |
+| Project Css/Responsive | H | .5hrs| :---: | .5hr |
+| Social Media Icons | H | 1hr | :---: | .5hr|
+| Total | H | 14.7hrs| :---: | 30.6hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Project Hover | L | 3hr | -hr | -hr|
-| Interactive Banner | M | 4hr | -hr | -hr|
-| Transitions| H | 4hr | -hr | -hr|
-| Bootstrap | H | 4hr | -hr | -hr|
-| Make own icon | L | 4hr | -hr | -hr|
-| Total | H | 20hrs| -hrs | -hrs |
+| Project Hover | L | 3hr | :---: | 2hr|
+| Bootstrap | L | 4hr | :---: | 1hr|
+| Total | L | 10hrs| :---: | 3hrs |
 
 ## Additional Libraries
- - Bootstrap
+ - Bootstrap (Did not end up using in final version)
  - JQuery
+ - Font Awesome
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+The two primary jQuery funcitons one for populating and rendering teh cards and on for the side nav bar and contact bar took the most conceptual work.
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+	//Project Card Maker function
+	function makeProjectCards(projectsArr) {
+		projectsArr.forEach((project) => {
+			//make project Card
+			let projectCard = $('<div>');
+			projectCard.addClass('projectCard');
+			projectCard.html(
+				`<div class="projectAnchorDiv">
+					<a class="projectAnchor" href="${project.url}">${project.title}</a>
+					<a class="projectLinkIcon" href="${project.url}"><i class="fas fa-external-link-square-alt"></i></a>
+				</div>
+				<h3 class="projectDescription">${project.description}
+				<img class="projectImg" src="${project.image}" alt="projectimg">`
+			);
+			$('#portfolioContent').append(projectCard);
+		});
+	}
+	//************************************************
+	//nav bar slider (this piece was given in lecture)
+	//*************************************************
+	$('nav  button').on('click', () => {
+		$('nav').toggleClass('open');
+	});
+
+	$(window).on('resize', () => {
+		if (window.innerWidth > 768) {
+			$('nav').removeClass('open');
+		}
+	});
+	//*************************************************
+	//contact form slider (this piece was my adaptation)
+	//same idea but required some thinking and research
+	//to figure out how to slide from other direction
+	//really helped me understand how it works
+	//*************************************************
+	$('.slideButton').on('click', () => {
+		$('footer').toggleClass('footerOpen');
+	});
 ```
 
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
 
 #### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+**ERROR**: Didn't save the exact error but a syntax error with (minwidth: 768)                               
+**RESOLUTION**: Missing px after number

@@ -44,32 +44,6 @@ $(() => {
 		});
 	}
 
-	// function makeProjectCards(projectsArr) {
-	// 	projectsArr.forEach((project) => {
-	// 		//make project Card
-	// 		let projectCard = $('<div>');
-	// 		projectCard.addClass('projectCard');
-	// 		let projectAnchor = $('<a>');
-	// 		projectAnchor.attr('href', project.url);
-	// 		projectAnchor.addClass('projectAnchor');
-	// 		projectCard.append(projectAnchor);
-	// 		//make project Img
-	// 		let projectImg = $('<img>');
-	// 		projectImg.attr('src', project.image).attr('alt', 'project image');
-	// 		projectImg.addClass('projectImg');
-	// 		//append Img to a tag
-	// 		projectCard.append(projectImg);
-	// 		//make project title
-	// 		let projectTitle = $('<div>');
-	// 		projectTitle.text(project.title);
-	// 		//append title to card
-	// 		projectAnchor.append(projectTitle);
-	// 		//make URL icon
-	// 		//append card to Portfolio Body
-	// 		$('#portfolioContent').append(projectCard);
-	// 	});
-	// }
-
 	$('nav  button').on('click', () => {
 		$('nav').toggleClass('open');
 	});
