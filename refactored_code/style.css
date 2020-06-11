@@ -75,6 +75,7 @@ nav a {
 	color: #53add7;
 	text-decoration: none;
 	font-size: 3rem;
+	line-height: 5.5rem;
 }
 
 .open .left {
@@ -83,7 +84,6 @@ nav a {
 }
 
 .close {
-	text-align: right;
 	color: #efc78b;
 	position: absolute;
 	top: 30px;
@@ -169,11 +169,13 @@ header {
 	padding: 2rem;
 	margin: 1rem auto;
 	background-color: whitesmoke;
+	border-radius: 1rem;
 }
 
 .projectImg {
 	position: absolute;
-	left: -150px;
+	left: -5rem;
+	width: 120%;
 }
 
 #portfolioContent {
@@ -181,6 +183,28 @@ header {
 	flex-direction: column;
 	padding: 1rem;
 	margin: 1rem;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, .5);
+}
+footer ul {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 2rem;
+}
+
+footer li {
+	padding: .5rem 1rem;
+}
+
+footer a {
+	text-decoration: none;
+	color: #53add7;
 }
 
 @media only screen and (min-width: 768px) {
