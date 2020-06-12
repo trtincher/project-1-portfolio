@@ -22,7 +22,11 @@ https://brittanychiang.com/#about I like this simple clean design with small col
 
 ## Google Sheet
 
-[My Google Prject Sheet](https://docs.google.com/spreadsheets/d/1FlYxWf-DCBFPt55fm0Hyu5pLr2dgCr2RqA1LKfahF-A/edit?usp=sharing) 
+[My Google Project Sheet](https://docs.google.com/spreadsheets/d/1FlYxWf-DCBFPt55fm0Hyu5pLr2dgCr2RqA1LKfahF-A/edit?usp=sharing)
+
+## GitHub Live
+
+[My GitHub Live](https://trtincher.github.io/project-1-portfolio/)
 
 ## Wireframes
 

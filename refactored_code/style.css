@@ -136,7 +136,7 @@ header {
 }
 
 #headerText {
-	padding: 1rem 0;
+	padding: 1rem;
 	line-height: 2rem;
 }
 
@@ -170,15 +170,15 @@ header {
 	text-align: center;
 	padding: 2rem;
 	margin-top: 2rem;
-	background-color: whitesmoke;
+	background-color: white;
 	font-family: 'Roboto', sans-serif;
 }
 
 #portfolioContent {
+	background-color: #53add7;
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
-	margin: 1rem;
 }
 
 .projectCard {
@@ -188,7 +188,7 @@ header {
 	overflow: hidden;
 	padding: 2rem;
 	margin: 1rem auto;
-	background-color: whitesmoke;
+	background-color: white;
 	border-radius: .2rem;
 }
 
@@ -233,7 +233,7 @@ footer {
 	bottom: 0;
 	left: 0;
 	width: 100vw;
-	background-color: rgba(255, 255, 255, .7);
+	background-color: rgba(255, 255, 255, .97);
 	z-index: 20;
 	color: #53add7;
 }
@@ -334,7 +334,7 @@ form textarea {
 	}
 
 	nav {
-		background-color: rgba(255, 255, 255, .8);
+		background-color: rgba(255, 255, 255, .97);
 		margin: 0;
 	}
 
@@ -409,11 +409,6 @@ form textarea {
 
 	#headshotBackground {
 		margin-right: 4rem;
-	}
-
-	.text-box:hover {
-		font-size: 1.8rem;
-		transition: all 500ms ease-in;
 	}
 
 	#portfolioContent {
